@@ -1,0 +1,159 @@
+:root {
+    --light-bg: rgba(0, 0, 0, .3);
+}
+
+
+@font-face {
+    font-family: "Alata";
+    src: url("../assets/fonts/Alata-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Alata", "sans-serif";
+    color: white;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/imgs/sunny-weather.jpg);
+    background-size: cover;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.left-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1rem;   
+    flex-wrap: wrap;
+}
+
+.location-container>h1 {
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.city {
+    font-size: 1.5rem;
+    padding: .8rem 0;
+}
+
+.current-temperature {
+    font-size: 2.8rem;
+}
+
+#display-f {
+    font-size: .9rem;
+    padding: .2rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.input-container {
+    display: flex;
+    border-bottom: solid black;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.input-container > input {
+    border: none;
+    flex: 1;
+    font-size: 1.1rem;
+    width: 70%;
+    background: none;
+}
+
+::placeholder {
+    color: white;
+}
+
+.input-container > input:focus {
+    outline: none;
+}
+
+.input-container > button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    background: url(../assets/icons/search.png) no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+
+.temperature-container > img {
+    width: 90px;
+    height: 90px;
+}
+
+.right-bar {
+    padding: 1rem;
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.weather-info > img {
+    width: 40px;
+    height: 40px;
+}
+
+.forecast-container {
+   
+}
+
+.week-days {
+   display: flex;
+   justify-content: space-between;
+   gap: 1.5rem;
+   flex-wrap: wrap;
+}
+
+.day-info {
+    font-size: 1.2rem;
+    background: var(--light-bg);
+    width: 200px;
+    text-align: center;
+}
+
+.day-info > img {
+    width: 70px;
+    height: 70px;
+}
+
+.day-info > p {
+    font-size: 1.4rem;
+}
+
+.day-info > h3 {
+    font-size: 1.4rem;
+}
+
+.left-bar, .right-bar {
+    background: var(--light-bg);
+}

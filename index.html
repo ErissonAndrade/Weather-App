@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <main>
+        <div class="left-bar">
+            <div class="location-container">
+                <h1 class="weather-status"></h1>
+                <p class="city"></p>
+                <div class="date-info">
+                    <p class="today"></p>
+                    <!-- <p class="time">12:22 am</p> -->
+                </div>
+            </div>
+            <div class="temperature-container">
+                <img src="" alt="">
+                <h1 class="current-temperature"></h1>
+                <button id="display-f">Display °F</button>
+                <div class="input-container">
+                    <input type="text" placeholder="Search Location">
+                    <button type="submit" id="search"></button>
+                </div>
+            </div>
+        </div>
+        <div class="right-bar">
+            <div class="weather-container">
+                <div class="weather-info">
+                    <img src="../src/assets/icons/temperature.png" alt="">
+                    <span>
+                        <p>Feels Like</p>
+                        <h2 class="feels-like"></h2>
+                    </span>
+                </div>
+                <div class="weather-info">
+                    <img src="../src/assets/icons/humidity.png" alt="">
+                    <span>
+                        <p>Humidity</p>
+                        <h2 class="humidity"></h2>
+                    </span>
+                </div>
+                <div class="weather-info">
+                    <img src="../src/assets/icons/precipitation.png" alt="">
+                    <span>
+                        <p>Chance Of Rain</p>
+                        <h2 class="rain-chance"></h2>
+                    </span>
+                </div>
+                <div class="weather-info">
+                    <img src="../src/assets/icons/wind.png" alt="">
+                    <span>
+                        <p>Wind Speed</p>
+                        <h2 class="wind-speed"></h2>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="forecast-container">
+        <div class="week-days">
+            <div class="day-info">
+                <p class="day-1"></p>
+                <h2 class="day-1-maxtemp">17°c</h2>
+                <h3 class="day-1-mintemp">13°c</h3>
+                <img src="../src/assets/icons/cloudy.png" alt="">
+            </div>
+            <div class="day-info">
+                <p class="day-2"></p>
+                <h2 class="day-2-maxtemp">17°c</h2>
+                <h3 class="day-2-mintemp">13°c</h3>
+                <img src="../src/assets/icons/cloudy.png" alt="">
+            </div>
+            <div class="day-info">
+                <p class="day-3"></p>
+                <h2 class="day-3-maxtemp">17°c</h2>
+                <h3 class="day-3-mintemp">13°c</h3>
+                <img src="../src/assets/icons/cloudy.png" alt="">
+            </div>
+            <div class="day-info">
+                <p class="day-4"></p>
+                <h2 class="day-4-maxtemp">17°c</h2>
+                <h3 class="day-4-mintemp">13°c</h3>
+                <img src="../src/assets/icons/cloudy.png" alt="">
+            </div>
+            <div class="day-info">
+                <p class="day-5"></p>
+                <h2 class="day-5-maxtemp">17°c</h2>
+                <h3 class="day-5-mintemp">13°c</h3>
+                <img src="../src/assets/icons/cloudy.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>        
